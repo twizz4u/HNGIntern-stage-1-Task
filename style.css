@@ -23,28 +23,29 @@ body {
   padding: 2rem;
   border: 1px solid #ddd;
   border-radius: 1.2rem;
-  display: flex;
-  gap: 2rem;
-  height: 20rem;
 }
+
+img {
+  margin-bottom: 0.8rem;
+}
+
 ul {
   width: 25rem;
+}
+
+h2 {
+  margin-bottom: 0.8rem;
 }
 
 ul li {
   list-style: none;
   width: 100%;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
   display: flex;
 }
 
 ul li span {
   flex-basis: 50%;
-}
-
-ul a {
-  text-decoration: none;
-  color: #dddddd7a;
 }
 
 div img {

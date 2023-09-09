@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>HNG Stage one Task</title>
   </head>
   <body>
     <div class="container">
+      <h2 data-testid="slackUserName">Tiwa</h2>
       <div class="img-box">
         <img
           src="Tiwa.jpg"
@@ -19,15 +20,15 @@
       </div>
       <div class="user-info-box">
         <ul>
-          <li data-testid="slackUserName"><span>Username:</span> Tiwa</li>
-          <li data-testid="currentDayOfTheWeek"><span>Day:</span></li>
-          <li data-testid="currentUTCTime"><span>UTC Time:</span></li>
-          <li data-testid="myTrack"><span>Track:</span>Frontend</li>
-          <li data-testid="githubURL">
-            <span>Github repo:</span>
-            <a href="https://github.com/twizz4u/HNGIntern-stage-1-Task">Link</a>
-          </li>
+          <li data-testid="currentDayOfTheWeek">Friday</li>
+          <li data-testid="currentUTCTime">636367337</li>
+          <li data-testid="myTrack">Frontend</li>
         </ul>
+        <a
+          data-testid="githubURL"
+          href="https://github.com/twizz4u/HNGIntern-stage-1-Task"
+          >Github repo</a
+        >
       </div>
     </div>
     <script>
@@ -37,6 +38,7 @@
         "Tuesday",
         "Wednesday",
         "Thursday",
+        "Friday",
         "Saturday",
       ];
 
@@ -54,8 +56,8 @@
       const UTCTime = new Date(
         `${UTCMonth} ${UTCDAte}, ${UTCYear}, ${UTCHour}:${UTCminutes}:${UTCSeconds}.${UTCMiliseconds}`
       );
-      time.innerHTML = `<span>UTC Time:</span> ${UTCTime.getTime()}`;
-      day.innerHTML = `<span>Day:</span>${daysOfTheWeek[date.getDay()]}`;
+      time.innerHTML = `${UTCTime.getTime()}`;
+      day.innerHTML = `${daysOfTheWeek[date.getDay()]}`;
     </script>
   </body>
 </html>
